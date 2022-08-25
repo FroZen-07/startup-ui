@@ -1,25 +1,29 @@
-/* Plus Jakarta Fonts */
+/* ------------------------------------------------------------ 
+Fonts setup
+---------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap');
 
-
-/* Setup */
+/* ------------------------------------------------------------ 
+Color setup
+---------------------------------------------------------------*/
 :root {
-    --primary: #3155E7;
+    --primary: #3155e7;
     --primary-dark: #2045d6;
     --black: #010101;
     --gray-1: #788190;
-    --gray-2: #D3D4DB;
+    --gray-2: #d3d4db;
     --white: #FFFFFF;
+    --body: #fefefe;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--body);
 }
 
 /* ------------------------------------------------------------ 
 Setup components
 ---------------------------------------------------------------*/
-
-body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: #FEFEFE;
-}
 
 /* button */
 .btn {
@@ -29,7 +33,6 @@ body {
 .btn-primary,
 .btn-outline-secondary {
     padding: 12px 20px;
-    border-radius: 8px;
 }
 
 .btn-primary {
@@ -43,45 +46,34 @@ body {
 .btn-outline-secondary {
     border: 1px solid var(--gray-2);
     color: var(--black);
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.13);
 }
 
 .btn-outline-secondary:hover {
     background-color: var(--gray-2);
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.13);
     border: 1px solid var(--gray-2);
     color: var(--black);
 }
 
 .btn-outline-secondary:focus {
-    border: 1px solid var(--gray-2);
     background-color: var(--gray-2);
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.13);
+    border: 1px solid var(--gray-2);
+    color: var(--black);
 }
 
-.navbar .btn.btn-outline-secondary {
+
+
+/* ------------------------------------------------------------ 
+Navbar
+---------------------------------------------------------------*/
+
+.navbar .btn-outline-secondary {
     border: 1px solid var(--gray-2);
     color: var(--black);
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     padding: 10px 16px;
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.13);
 }
-
-.navbar .btn.btn-outline-secondary:hover {
-    background-color: var(--gray-2);
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.13);
-}
-
-.navbar .btn.btn-outline-secondary:focus {
-    background-color: var(--gray-2);
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.13);
-}
-
-/* ------------------------------------------------------------ 
-Navbar
----------------------------------------------------------------*/
 
 .navbar {
     padding: 32px 0;
@@ -130,15 +122,15 @@ section.setup {
 }
 
 section.setup .text-header h3 {
-    font-weight: 700;
     font-size: 42px;
+    font-weight: 700;
     line-height: 48px;
     color: var(--black);
 }
 
 section.setup .text-header p {
-    font-weight: 400;
     font-size: 18px;
+    font-weight: 400;
     line-height: 28px;
     color: var(--gray-1);
     padding: 27px 0;
@@ -150,7 +142,7 @@ section.setup .icons {
 
 section.setup h5 {
     font-weight: 700;
-    font-size: 18.0833px;
+    font-size: 18px;
     line-height: 24px;
     color: var(--black);
     padding-bottom: 18px;
@@ -158,10 +150,10 @@ section.setup h5 {
 
 section.setup .desc p {
     font-weight: 400;
-    font-size: 13.7778px;
+    font-size: 13px;
     line-height: 22px;
     color: var(--gray-1);
-    max-width: 284.17px;
+    max-width: 284px;
     margin: 0 auto;
 }
 
@@ -173,15 +165,15 @@ section.information .text-information {
 }
 
 section.information h5 {
-    font-weight: 700;
     font-size: 42px;
+    font-weight: 700;
     line-height: 48px;
     color: var(--black);
 }
 
 section.information p {
-    font-weight: 300;
     font-size: 18px;
+    font-weight: 300;
     line-height: 28px;
     color: var(--gray-1);
     padding-top: 20px;
@@ -202,29 +194,55 @@ footer {
 footer a {
     font-weight: bold;
     font-size: 14px;
-    line-height: 18px;
     color: var(--black);
+    line-height: 18px;
 }
 
 footer .copy {
     margin-top: 32px;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
     color: var(--gray-1);
+    line-height: 17px;
+    font-weight: 400;
 }
 
-/* Responsive */
+/* ------------------------------------------------------------ 
+Responsive section
+---------------------------------------------------------------*/
 @media (max-width: 576px) {
 
     section.hero,
-    section.setuo,
+    section.setup,
     section.information {
         text-align: center;
     }
 
+    /* ------------------------------------------------------------ 
+    Navbar
+    ---------------------------------------------------------------*/
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+    /* ------------------------------------------------------------ 
+    Hero setion
+    ---------------------------------------------------------------*/
+    section.hero img {
+        padding-top: 2.5rem;
+    }
+
+    section.hero .text {
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 53px;
+    }
+
     .buttons .btn {
-        display: block !important;
+        display: block;
         margin: 1rem 0;
     }
 
@@ -239,32 +257,6 @@ footer .copy {
         padding: 50px 0;
     }
 
-
-    /* ------------------------------------------------------------ 
-    Navbar
-    ---------------------------------------------------------------*/
-
-    .navbar {
-        padding: 20px 0;
-    }
-
-    .nav-link {
-        margin-left: 0;
-    }
-
-    /* ------------------------------------------------------------ 
-    Hero setion
-    ---------------------------------------------------------------*/
-    .image {
-        padding-top: 2.5rem;
-    }
-
-    section.hero .text {
-        font-weight: 800;
-        font-size: 38px;
-        line-height: 53px;
-    }
-
     /* ------------------------------------------------------------ 
     Footer setion
     ---------------------------------------------------------------*/
@@ -272,5 +264,4 @@ footer .copy {
         padding-top: 50px;
         margin-bottom: 44px;
     }
-
 }
