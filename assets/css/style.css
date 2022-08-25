@@ -1,0 +1,276 @@
+/* Plus Jakarta Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap');
+
+
+/* Setup */
+:root {
+    --primary: #3155E7;
+    --primary-dark: #2045d6;
+    --black: #010101;
+    --gray-1: #788190;
+    --gray-2: #D3D4DB;
+    --white: #FFFFFF;
+}
+
+/* ------------------------------------------------------------ 
+Setup components
+---------------------------------------------------------------*/
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #FEFEFE;
+}
+
+/* button */
+.btn {
+    border-radius: 8px;
+}
+
+.btn-primary,
+.btn-outline-secondary {
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn-outline-secondary {
+    border: 1px solid var(--gray-2);
+    color: var(--black);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.13);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--gray-2);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.13);
+    border: 1px solid var(--gray-2);
+    color: var(--black);
+}
+
+.btn-outline-secondary:focus {
+    border: 1px solid var(--gray-2);
+    background-color: var(--gray-2);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.13);
+}
+
+.navbar .btn.btn-outline-secondary {
+    border: 1px solid var(--gray-2);
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 16px;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.13);
+}
+
+.navbar .btn.btn-outline-secondary:hover {
+    background-color: var(--gray-2);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.13);
+}
+
+.navbar .btn.btn-outline-secondary:focus {
+    background-color: var(--gray-2);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.13);
+}
+
+/* ------------------------------------------------------------ 
+Navbar
+---------------------------------------------------------------*/
+
+.navbar {
+    padding: 32px 0;
+}
+
+.nav-link {
+    margin-left: 41px;
+    font-size: 16px;
+    color: var(--gray-1);
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: var(--black);
+}
+
+/* ------------------------------------------------------------ 
+Hero setion
+---------------------------------------------------------------*/
+section.hero {
+    padding: 80px 0;
+}
+
+section.hero .text {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 73px;
+    color: var(--black);
+}
+
+.buttons {
+    padding-top: 69px;
+}
+
+.buttons .btn {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+/* ------------------------------------------------------------ 
+Setup setion
+---------------------------------------------------------------*/
+section.setup {
+    padding: 287px 0;
+}
+
+section.setup .text-header h3 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 48px;
+    color: var(--black);
+}
+
+section.setup .text-header p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--gray-1);
+    padding: 27px 0;
+}
+
+section.setup .icons {
+    padding: 27px 0;
+}
+
+section.setup h5 {
+    font-weight: 700;
+    font-size: 18.0833px;
+    line-height: 24px;
+    color: var(--black);
+    padding-bottom: 18px;
+}
+
+section.setup .desc p {
+    font-weight: 400;
+    font-size: 13.7778px;
+    line-height: 22px;
+    color: var(--gray-1);
+    max-width: 284.17px;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------------ 
+Information setion
+---------------------------------------------------------------*/
+section.information .text-information {
+    padding: 134px 0;
+}
+
+section.information h5 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 48px;
+    color: var(--black);
+}
+
+section.information p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--gray-1);
+    padding-top: 20px;
+}
+
+section.information .info-1 {
+    padding: 183px 0;
+}
+
+/* ------------------------------------------------------------ 
+Footer setion
+---------------------------------------------------------------*/
+footer {
+    padding-top: 279px;
+    margin-bottom: 44px;
+}
+
+footer a {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--black);
+}
+
+footer .copy {
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--gray-1);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+
+    section.hero,
+    section.setuo,
+    section.information {
+        text-align: center;
+    }
+
+    .buttons .btn {
+        display: block !important;
+        margin: 1rem 0;
+    }
+
+    .buttons .ms-3 {
+        margin-left: 0 !important;
+    }
+
+    /* ------------------------------------------------------------ 
+    Setup setion
+    ---------------------------------------------------------------*/
+    section.setup {
+        padding: 50px 0;
+    }
+
+
+    /* ------------------------------------------------------------ 
+    Navbar
+    ---------------------------------------------------------------*/
+
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+    /* ------------------------------------------------------------ 
+    Hero setion
+    ---------------------------------------------------------------*/
+    .image {
+        padding-top: 2.5rem;
+    }
+
+    section.hero .text {
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 53px;
+    }
+
+    /* ------------------------------------------------------------ 
+    Footer setion
+    ---------------------------------------------------------------*/
+    footer {
+        padding-top: 50px;
+        margin-bottom: 44px;
+    }
+
+}
